@@ -9,7 +9,13 @@
   </head>
   <body>
     <div id="app">
-      <board hello="Hello World!"></board>
+      <div class="board">
+        <tile
+          v-for="tile in tiles"
+          v-bind:data="tile"
+          v-bind:key="tile.id">
+        </tile>
+      </div>
     </div>
   </body>
   <script src="main.js"></script>
