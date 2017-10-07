@@ -13,7 +13,8 @@
         <tile
           v-for="tile in tiles"
           v-bind:data="tile"
-          v-bind:key="tile.id">
+          v-bind:key="tile.id"
+          v-on:click="markTile()">
         </tile>
       </div>
     </div>

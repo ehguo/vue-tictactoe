@@ -1,9 +1,9 @@
 Vue.component('tile', {
   props: ['data'],
   template: `
-    <div class="tile">
+    <a class="tile">
       {{ data.mark }}
-    </div>
+    </a>
   `
 });
 
@@ -21,5 +21,10 @@ new Vue({
       { id: 7, mark: '' },
       { id: 8, mark: '' }
     ]
+  },
+  methods: {
+    markTile: function (event) {
+      console.log(event.target);
+    }
   }
 });
