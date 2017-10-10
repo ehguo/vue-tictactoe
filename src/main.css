@@ -9,6 +9,7 @@ body {
 
 #app {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -36,4 +37,9 @@ body {
   height: 100px;
 
   font-size: 3em;
+}
+
+.new-game {
+  margin: 5px;
+  padding: 5px;
 }

@@ -9,6 +9,7 @@
   </head>
   <body>
     <div id="app">
+
       <div class="board">
         <tile
           v-for="tile in tiles"
@@ -18,6 +19,11 @@
           @click.native="markTile">
         </tile>
       </div>
+
+      <button
+        class="new-game"
+        @click="newGame">
+        New Game</button>
     </div>
   </body>
   <script src="main.js"></script>
