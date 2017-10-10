@@ -11,9 +11,10 @@
     <div id="app">
       <div class="board">
         <tile
-          v-for="(tile, idx) in tiles"
-          :id="idx"
-          :mark="tile"
+          v-for="tile in tiles"
+          :key="tile.id"
+          :id="tile.id"
+          :mark="tile.mark"
           @click.native="markTile">
         </tile>
       </div>
