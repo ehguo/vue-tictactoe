@@ -7,10 +7,15 @@
     <script src="https://unpkg.com/vue"></script>
     <link href="src/main.css" rel="stylesheet">
   </head>
-  <body>
-    <div id="app">
-      <div class="board">
+  <body
+    class="flex flex-col flex-center">
+    <div
+      id="app"
+      class="flex flex-col flex-center">
+      <div
+        class="board flex flex-wrap flex-center">
         <tile
+          class="tile flex flex-center"
           v-for="tile in tiles"
           :key="tile.id"
           :id="tile.id"

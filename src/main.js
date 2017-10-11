@@ -1,9 +1,7 @@
 Vue.component('tile', {
   props: ['mark'],
   template: `
-    <a class="tile">
-      {{ mark }}
-    </a>
+    <a>{{ mark }}</a>
   `
 });
 
